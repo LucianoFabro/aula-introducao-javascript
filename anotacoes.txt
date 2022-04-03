@@ -1,0 +1,146 @@
+<script language>...</script>
+São, respectivamente, delimitadores de início e fim da codificação JavaScript.
+
+<!--    //-->
+São, respectivamente, indicadores de inicialização e de finalização do conteúdo das linhas do código JavaScript. São utilizados para informar ao navegador a possibilidade de não executar os comandos que estiverem entre esses elementos, caso o browser não suporte o código JavaScript.
+
+/*    */
+É usado para definição de uma documentação e/ou um comentário interno do código.
+
+var
+É um parâmetro para definição de variáveis.
+
+; (ponto-e-vírgula)
+É utilizado para finalizar uma linha de comando.
+
+objeto
+São elementos ou sujeitos de uma ação, responsáveis por um comando ou por uma instrução. Por exemplo:
+
+Um documento web = uma página web carregada pelo navegador (browser)
+Uma tela web = uma janela web carregada pelo navegador (browser).
+Exemplos de objeto: document, window.
+
+método
+É uma forma ou um recurso que indica como um objeto será manipulado ou processado. Podemos definir métodos de entrada ou de saída.
+
+Exemplos de método: prompt, form, alert, write.
+
+propriedade
+É uma característica específica para tratar um objeto. Por exemplo: a aplicação de funções matemáticas, logarítmicas ou de variações.
+
+Exemplos de propriedade: PI, sqrt, random.
+
+evento
+É um recurso de ação aplicado ao objeto.
+
+Exemplos de eventos: onclick, onblur, onfocus, onload, onmousedown, onmousemove, onmouseout, onmouseover.
+
+Para se aprofundar no conteúdo sobre o elemento evento, consulte:
+
+http://www.devmedia.com.br. Acesso em: 7 nov. 2016.
+
+funções
+Uma função é um agrupamento de comandos ou instruções, delimitados por {...} (chaves), que serão executados por meio de uma ação. Tal agrupamento é referenciado por uma palavra identificadora, como identificacao(), que pode ser ou não parametrizada, isto é, receber um determinado atributo.
+
+A sintaxe de uma função é a seguinte:
+
+function identificacao() {
+   comandos ou instruções;
+}
+
+saída de dados
+ Saída de Dados:
+
+
+\u00e1 é um Unicode sobre a representação dos caracteres específicos de acentuação universal, de acordo com a linguística regional. Esse código \u00e1 será interpretado pelo navegador como “á” (vogal “a” com acento agudo).
+
+Veja mais sobre Caracteres de Acentuação em:
+
+HTML: http://www.lsi.usp.br. Acesso em: 3 nov. 2016.
+UNICODE: http://www.devmedia.com.br. Acesso em: 3 nov. 2016.
+META TAGS: http://tableless.com.br. Acesso em: 3 nov. 2016; http://wiki.locaweb.com.br. Acesso em: 3 nov. 2016.
+
+No sistema de escrita do alfabeto latino, temos, por exemplo, as seguintes opções:
+
+De \u0041 a \u005a para as letras maiúsculas de A a Z
+De \u0061 a \u007a para as letras minúsculas de a a z
+De \u0030 a \u0039 para dígitos de 0 a 9
+\u005f para sublinhar “_”
+\u0024 para cifrão “$”.
+Veja mais sobre Unicode – Caracteres de acentuação em:
+
+<http://www.devmedia.com.br>. Acesso em: 3 nov. 2016.
+
+variáveis
+Variáveis são elementos classificados como objetos que têm a finalidade de armazenar um valor ou uma expressão. Essas variáveis são definidas apenas durante o tempo de execução e, quando definidas e utilizadas para o desenvolvimento do código, são associadas a "nomes", denominados "identificadores".
+
+Operadores Unários
+São aqueles aplicados a uma única variável, isto é, que atuam sobre um único operando. A aplicação para inversão de sinal, tornando o valor do operando (variável) negativo ou positivo, é um exemplo.
+
+Vejamos alguns exemplos:
+
+-x (o valor que está armazenado no operando x é negativo)
+x++ (incremento de +1 na variável x).
+
+Operadores Binários
+São aqueles aplicados sobre duas variáveis, isto é, encontram-se dentro de uma expressão aritmética, atuando sobre dois operandos, que podem ser duas variáveis, duas constantes, ou uma variável e uma constante.
+
+Vejamos alguns exemplos:
+
+z= x+y (somatória entre as variáveis x e y e a atribuição do resultado à variável z)
+z=5+7 (somatória entre as constantes 5 e 7 e a atribuição do resultado à variável z)
+z=x+7 (somatória entre os operandos – respectivamente uma variável e uma constante - x e 7 e a atribuição do resultado à variável z).
+
+Operadores Aritméticos
++= Efetua a somatória e, em seguida, a atribuição.
+a+=y é o mesmo que a=a+y
+
+-= Aplica a subtração de valor e a atribuição na sequência.
+s-=y é o mesmo que s=s-y
+
+*= Realiza a multiplicação de valores e, na sequência, a atribuição.
+m*=y é o mesmo que m = m*y
+
+/= Efetua a divisão entre os valores e, em seguida, a atribuição.
+d/=y é o mesmo que d = d/y
+
+%= Aplica a divisão com o armazenamento do resto e a atribuição.
+r %= y é o mesmo que r = r%y
+
+operadores relacionais
+idade >= 18
+nome1 == nome2
+“Email” != "email"
+salario > 4999,99
+
+Operadores Lógicos ou Booleanos
+Operadores lógicos ou booleanos, aplicados juntamente com os operadores relacionais ou de comparação dentro de uma estrutura condicional (SE), são os tipos de operadores empregados para processar três tipos de relação.
+
+conjunção (.e.)
+Uma conjunção (.e.), representada na linguagem JavaScript pela simbologia &&, é a busca por um resultado verdadeiro por meio da validação de todos os elementos condicionais. Por exemplo:
+
+if (curso=='DS' && turma!= 0) {
+	window.alert(‘Ola Mundo!’);
+}
+No exemplo apresentado, temos o operador lógico de conjunção && (.e.) determinando que, por meio de uma decisão condicional SE (if), a mensagem ‘Ola Mundo!’ só será apresentada se curso for igual (==) a ‘DS’ e (&&) turma for diferente de (!=) 0 (zero).
+
+Isso quer dizer que as duas condições (curso e turma) devem apresentar resultados verdadeiros para que a mensagem seja exibida. Caso contrário, a condição não é executada.
+
+disjunção (.ou.)
+Uma disjunção (.ou.), representada na linguagem JavaScript pela simbologia ||, é a busca por um resultado verdadeiro por meio da validação de, pelo menos, um dos elementos condicionais. Por exemplo:
+
+if (curso==’DS’ || turma== 1) {
+	window.alert(‘Ola Mundo!’);
+}
+Nesse caso, o operador lógico || (.ou.) de disjunção determina que, por meio de uma decisão condicional SE (if), a mensagem ‘Ola Mundo!’ será apresentada se curso for igual (==) a ‘DS’ ou (||) turma for igual a (==) 1 (um).
+
+Isso quer dizer que, pelo menos, uma das condições (curso ou turma) deve apresentar resultado verdadeiro para que a mensagem seja exibida. Caso contrário, a condição não é executada.
+
+negação (.não.)
+Uma negação (.não.), representada na linguagem JavaScript pela simbologia !, é a busca por um resultado verdadeiro por meio da validação invertida do elemento condicional ou dos elementos condicionais. Por exemplo:
+
+if ( !(curso==’DS’) ) {
+	window.alert(‘Ola Mundo!’);
+}
+Nesse exemplo, o operador lógico ! (.não.) de negação determina que, por meio de uma decisão condicional SE (if) invertida, a mensagem ‘Ola Mundo!’ será apresentada se curso for não (!) igual (==) a ‘DS’, isto é, se o curso não for ‘DS’, a mensagem será exibida. Caso contrário, a condição não será verdadeira e, consequentemente, não executada.
+
